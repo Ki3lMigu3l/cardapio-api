@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/food")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class FoodController {
 
 
@@ -19,7 +20,6 @@ public class FoodController {
 
     @GetMapping
     public List<FoodRecordResponse> getAllFood() {
-
         List<FoodRecordResponse> foodList = repository.findAll().stream().map(FoodRecordResponse::new).toList();
         return foodList;
     }
