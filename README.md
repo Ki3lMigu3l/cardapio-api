@@ -29,21 +29,28 @@ Este projeto tem como objetivo a criação de uma API RESTful para gerenciar um 
 </div>
 
 <br>
-
 Swagger, atualmente conhecido como OpenAPI, é um framework para documentação de APIs RESTful. Ele gera uma documentação interativa de forma automática, padroniza a descrição dos endpoints e permite testar a API diretamente pela interface.
-<br><br>
+
+<div align="center">
+  <img src="https://github.com/Ki3lMigu3l/cardapio-api/blob/main/docs/carbon-endpoint-get.png?raw=true" width="800px" />
+  <p><em>Endpoint para buscar um item pelo ID.</em></p>
+</div>
+
+<br>
+
 Acesse a documentação interativa:  
 [![Swagger UI](https://img.shields.io/badge/Swagger_UI-Live-%2385EA2D?logo=swagger)](http://localhost:8080/swagger-ui.html)
 
 <div align="center">
-
-| **Recurso**            | **Descrição Específica**                                   | **Exemplo no Projeto**                     |
-|------------------------|----------------------------------------------------------|------------------------------------- |
-| **🗂️ Endpoints**      | Operações CRUD para gestão de itens do cardápio            | `GET /api/foods`, `POST /api/foods`|
-| **⚡ Status Codes**      | Respostas específicas do food controller                   | `200 - OK`, `404 - Not Found`   |
-| **🧪 Teste Direto**      | Experimente todas as operações via interface               | Teste criar/editar diretamente  |
-
+  <img src="https://github.com/Ki3lMigu3l/cardapio-api/blob/main/docs/swagger-endpoints.png" width="800px" />
+  <p><em>Documentação interativa dos endpoints de Food</em></p>
 </div>
 
-
 <h2></h2>
+
+<div align="center">
+  <h3>Testing | JUnit 5</h3>
+  <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/junit.png" alt="JUnit 5" width="50"/>
+
+  JUnit é o principal framework para testes unitários em Java. Ele permite automatizar verificações de comportamento, assegura a qualidade do código e ajuda a prevenir regressões durante o desenvolvimento.
+</div>
