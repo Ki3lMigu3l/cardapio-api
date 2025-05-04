@@ -4,6 +4,8 @@
 [![MySQL](https://img.shields.io/badge/MySQL-%234479A1?logo=mysql&logoColor=white)](https://www.mysql.com)
 [![Swagger](https://img.shields.io/badge/Swagger-2.1.0-%2385EA2D?logo=swagger)](https://swagger.io/)
 [![JUnit5](https://img.shields.io/badge/JUnit5-5.9.3-%25B60017?logo=junit5)](https://junit.org/junit5/)
+[![codecov](https://codecov.io/gh/Ki3lMigu3l/cardapio-api/graph/badge.svg?token=6Y7LUJM8PN)](https://codecov.io/gh/Ki3lMigu3l/cardapio-api)
+
 
 Este é um projeto Full Stack de uma API RESTful para a gestão de cardápios, desenvolvido com Spring no backend, React no frontend e MySQL como banco de dados. O sistema visa proporcionar uma forma simples de gerenciamento e exibição de itens de cardápio, proporcionando uma experiência intuitiva.
 
@@ -13,11 +15,9 @@ Este é um projeto Full Stack de uma API RESTful para a gestão de cardápios, d
   <h3>Tecnologias Utilizadas</h3>
   
   [![My Skills](https://skillicons.dev/icons?i=git,java,spring,mysql,react,idea,postman&perline=8)](https://skillicons.dev)
+    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png" alt="Swagger" width="50"/>
+    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/junit.png" alt="JUnit 5" width="50"/>
 </div>
-<h2></h2>
-
-<h3>Objetivo</h3>
-Este projeto tem como objetivo a criação de uma API RESTful para gerenciar um cardápio de restaurante. Ele permite adicionar, editar, remover e listar os itens do cardápio, enquanto oferece uma interface simples e intuitiva para os usuários finais.
 
 <h2></h2>
 
@@ -69,3 +69,8 @@ Acesse a documentação interativa:
   <img src="https://github.com/Ki3lMigu3l/cardapio-api/blob/main/docs/postman-crud.png" width="800px" />
   <p><em>Testes manuais dos endpoints da aplicação com Postman.</em></p>
 </div>
+
+<h2></h2>
+
+<h3>Objetivo</h3>
+Este projeto tem como objetivo a criação de uma API RESTful para gerenciar um cardápio de restaurante. Ele permite adicionar, editar, remover e listar os itens do cardápio, enquanto oferece uma interface simples e intuitiva para os usuários finais.
