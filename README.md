@@ -14,9 +14,8 @@ Este é um projeto Full Stack de uma API RESTful para a gestão de cardápios, d
 <div align="center">
   <h3>Tecnologias Utilizadas</h3>
   
-  [![My Skills](https://skillicons.dev/icons?i=git,java,spring,mysql,react,idea,postman&perline=8)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=git,java,spring,mysql,react,tailwind,idea,postman&perline=8)](https://skillicons.dev)
     <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png" alt="Swagger" width="50"/>
-    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/junit.png" alt="JUnit 5" width="50"/>
 </div>
 
 <h2></h2>
