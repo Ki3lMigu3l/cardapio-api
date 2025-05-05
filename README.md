@@ -14,8 +14,99 @@ Este é um projeto Full Stack de uma API RESTful para a gestão de cardápios, d
 <div align="center">
   <h3>Principais Tecnologias e Ferramentas</h3>
   
-  [![My Skills](https://skillicons.dev/icons?i=git,java,spring,mysql,react,tailwind,idea,postman&perline=8)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=git,java,spring,mysql,react,tailwind,docker,idea,postman&perline=3)](https://skillicons.dev)
 </div>
+
+<h2></h2>
+
+<div align="center">
+<h3>Rodando o Projeto</h3>
+
+  [![My Skills](https://skillicons.dev/icons?i=docker&perline=8)](https://skillicons.dev)
+</div>
+
+Este projeto está completamente containerizado utilizando **Docker** e **Docker Compose**. Você pode iniciar tanto o backend quanto o frontend com um único comando, sem necessidade de instalar Node.js, Java ou dependências adicionais localmente.
+
+<h4>Pré-requisitos</h4>
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+<br>
+
+Com o Docker e Docker Compose devidamente instalados no seu sistema, você pode subir toda a aplicação com um único comando.
+
+1. Acesse a pasta raiz do projeto, onde está localizado o arquivo docker-compose.yml.
+2. Abra o terminal nessa pasta.
+3. Execute o seguinte comando:
+
+
+<div align="center"  >
+  
+```bash
+  docker-compose up --build
+```
+</div>
+
+Este comando vai construir as imagens Docker do frontend, backend, banco de dados e inicializar todos os containers automaticamente.
+
+
+<h2></h2>
+
+<div align="center">
+<h3>Acesso aos serviços</h3>
+</div>
+
+Após a execução bem-sucedida do comando acima, os serviços estarão disponíveis nos seguintes endereços:
+
+- 🔙 Backend (API - Spring Boot): http://localhost:8080
+
+- 🎨 Frontend (React + Nginx): http://localhost
+
+- 📘 Swagger UI (Documentação da API): http://localhost:8080/swagger-ui.html
+
+<br>
+O frontend é servido por um servidor Nginx configurado para rodar na porta 80, enquanto o backend opera na porta 8080.
+
+<h2></h2>
+
+<div align="center"> 
+  <h3>Estrutura de Pastas do Projeto</h3>
+</div>
+A estrutura a seguir demonstra a organização dos diretórios e arquivos principais deste projeto Full Stack:
+<br>
+
+```bash
+├── backend/                  # Aplicação Spring Boot (API RESTful)
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/         # Código-fonte Java
+│   │   │   └── resources/    # Arquivos de configuração (application.properties, etc.)
+│   │   └── test/             # Testes unitários (JUnit)
+│   ├── pom.xml               # Gerenciador de dependências Maven
+│   └── Dockerfile            # Dockerfile do backend
+│
+├── frontend/                 # Aplicação Frontend (React + Vite + Tailwind)
+│   ├── public/               # Arquivos públicos acessíveis diretamente (favicon, etc.)
+│   ├── src/                  # Código-fonte principal
+│   │   ├── assets/           # Imagens e recursos visuais
+│   │   ├── components/       # Componentes reutilizáveis (Card, Navbar, etc.)
+│   │   ├── containers/       # Páginas principais (Home, Admin)
+│   │   ├── services/         # Comunicação com a API (axios)
+│   │   ├── styles/           # Estilos globais (Tailwind)
+│   │   ├── types/            # Tipagens e interfaces TypeScript
+│   │   └── main.tsx          # Ponto de entrada da aplicação
+│   ├── index.html            # HTML base da aplicação
+│   ├── vite.config.ts        # Configuração do Vite
+│   ├── Dockerfile            # Dockerfile do frontend
+│   ├── tsconfig.json         # Configuração do TypeScript
+│   └── package.json          # Dependências e scripts npm
+│
+├── docker-compose.yml        # Orquestração dos containers (frontend, backend, banco de dados)
+├── .env                      # Variáveis de ambiente (opcional)
+├── README.md                 # Este arquivo de documentação
+└── docs/                     # Imagens e arquivos de apoio à documentação
+```
 
 <h2></h2>
 
@@ -70,14 +161,13 @@ Utilizamos o JUnit5 que é o principal framework para testes unitários em Java.
   <h3>Testing Manual | Postman</h3>
   
   [![My Skills](https://skillicons.dev/icons?i=postman&perline=8)](https://skillicons.dev)
-</div>
+
 
 Postman é uma ferramenta amplamente utilizada para testes de APIs RESTful. Ele permite enviar requisições HTTP de forma prática, validar respostas, organizar coleções de testes e simular diferentes cenários de uso. No projeto, o Postman foi utilizado para testar manualmente os endpoints da API, garantindo que estejam funcionando conforme o esperado e facilitando o processo de depuração e validação durante o desenvolvimento.
 
   <img src="https://github.com/Ki3lMigu3l/cardapio-api/blob/main/docs/postman-crud.png" width="800px" />
   <p><em>Testes manuais dos endpoints da aplicação com Postman.</em></p>
-
-
+</div>
 <h2></h2>
 
 <div align="center">
@@ -115,7 +205,6 @@ O frontend foi desenvolvido com React.js, escolhido por sua modularidade, perfor
 </div>
 
 <h2></h2>
-
 
 <h3>Objetivo</h3>
 Este projeto tem como objetivo a criação de uma API RESTful para gerenciar um cardápio de restaurante. Ele permite adicionar, editar, remover e listar os itens do cardápio, enquanto oferece uma interface simples e intuitiva para os usuários finais.
