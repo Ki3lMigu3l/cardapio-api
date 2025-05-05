@@ -4,8 +4,8 @@ import com.github.ki3lmigu3l.food.model.Food;
 
 import java.math.BigDecimal;
 
-public record FoodRequest(String name, String image, BigDecimal price) {
+public record FoodRequest(String name, String image, String description, BigDecimal price) {
     public FoodRequest(Food food) {
-        this(food.getName(), food.getImage(), food.getPrice());
+        this(food.getName(), food.getImage(), food.getDescription(), food.getPrice());
     }
 }

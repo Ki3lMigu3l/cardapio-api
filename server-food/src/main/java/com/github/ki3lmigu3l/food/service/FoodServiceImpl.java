@@ -39,6 +39,8 @@ public class FoodServiceImpl implements FoodService {
                 .map(food -> {
                     food.setName(foodRequest.name());
                     food.setPrice(foodRequest.price());
+                    food.setDescription(foodRequest.description());
+                    food.setImage(foodRequest.image());
                     return repository.save(food);
                 });
     }

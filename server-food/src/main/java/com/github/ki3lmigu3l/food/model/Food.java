@@ -18,18 +18,21 @@ public class Food {
     private Long id;
     private String name;
     private String image;
+    private String description;
     private BigDecimal price;
 
     public Food(FoodRequest foodRequest) {
         this.name = foodRequest.name();
         this.image = foodRequest.image();
+        this.description = foodRequest.description();
         this.price = foodRequest.price();
     }
 
-    public Food(long id, String name, String image, BigDecimal price) {
+    public Food(long id, String name, String image, String description, BigDecimal price) {
         this.id = id;
         this.name = name;
         this.image = image;
+        this.description = description;
         this.price = price;
     }
 }
