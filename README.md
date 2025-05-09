@@ -14,7 +14,7 @@ Este é um projeto Full Stack de uma API RESTful para a gestão de cardápios, d
 <div align="center">
   <h3>Principais Tecnologias e Ferramentas</h3>
   
-  [![My Skills](https://skillicons.dev/icons?i=git,java,spring,mysql,react,tailwind,docker,idea,postman&perline=3)](https://skillicons.dev)
+  [![My Skills](https://skillicons.dev/icons?i=git,java,spring,mysql,react,tailwind,docker,idea,postman&perline=9)](https://skillicons.dev)
 </div>
 
 <h2></h2>
