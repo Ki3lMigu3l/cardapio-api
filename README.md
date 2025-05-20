@@ -17,101 +17,17 @@ Este é um projeto Full Stack de uma API RESTful para a gestão de cardápios, d
   [![My Skills](https://skillicons.dev/icons?i=git,java,spring,mysql,react,tailwind,docker,idea,postman&perline=9)](https://skillicons.dev)
 </div>
 
-<h2></h2>
 
-<div align="center">
-<h3>Rodando o Projeto</h3>
-
-  [![My Skills](https://skillicons.dev/icons?i=docker&perline=8)](https://skillicons.dev)
-</div>
-
-Este projeto está completamente containerizado utilizando **Docker** e **Docker Compose**. Você pode iniciar tanto o backend quanto o frontend com um único comando, sem necessidade de instalar Node.js, Java ou dependências adicionais localmente.
-
-<h4>Pré-requisitos</h4>
-
-- [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
-
-<br>
-
-Com o Docker e Docker Compose devidamente instalados no seu sistema, você pode subir toda a aplicação com um único comando.
-
-1. Acesse a pasta raiz do projeto, onde está localizado o arquivo docker-compose.yml.
-2. Abra o terminal nessa pasta.
-3. Execute o seguinte comando:
-
-
-<div align="center"  >
-  
-```bash
-  docker-compose up --build
-```
-</div>
-
-Este comando vai construir as imagens Docker do frontend, backend, banco de dados e inicializar todos os containers automaticamente.
 
 
 <h2></h2>
 
-<div align="center">
-<h3>Acesso aos serviços</h3>
-</div>
 
-Após a execução bem-sucedida do comando acima, os serviços estarão disponíveis nos seguintes endereços:
-
-- 🔙 Backend (API - Spring Boot): http://localhost:8080
-
-- 🎨 Frontend (React + Nginx): http://localhost
-
-- 📘 Swagger UI (Documentação da API): http://localhost:8080/swagger-ui.html
-
-<br>
-O frontend é servido por um servidor Nginx configurado para rodar na porta 80, enquanto o backend opera na porta 8080.
-
-<h2></h2>
-
-<div align="center"> 
-  <h3>Estrutura de Pastas do Projeto</h3>
-</div>
-A estrutura a seguir demonstra a organização dos diretórios e arquivos principais deste projeto Full Stack:
-<br>
-
-```bash
-├── backend/                  # Aplicação Spring Boot (API RESTful)
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/         # Código-fonte Java
-│   │   │   └── resources/    # Arquivos de configuração (application.properties, etc.)
-│   │   └── test/             # Testes unitários (JUnit)
-│   ├── pom.xml               # Gerenciador de dependências Maven
-│   └── Dockerfile            # Dockerfile do backend
-│
-├── frontend/                 # Aplicação Frontend (React + Vite + Tailwind)
-│   ├── public/               # Arquivos públicos acessíveis diretamente (favicon, etc.)
-│   ├── src/                  # Código-fonte principal
-│   │   ├── assets/           # Imagens e recursos visuais
-│   │   ├── components/       # Componentes reutilizáveis (Card, Navbar, etc.)
-│   │   ├── containers/       # Páginas principais (Home, Admin)
-│   │   ├── services/         # Comunicação com a API (axios)
-│   │   ├── styles/           # Estilos globais (Tailwind)
-│   │   ├── types/            # Tipagens e interfaces TypeScript
-│   │   └── main.tsx          # Ponto de entrada da aplicação
-│   ├── index.html            # HTML base da aplicação
-│   ├── vite.config.ts        # Configuração do Vite
-│   ├── Dockerfile            # Dockerfile do frontend
-│   ├── tsconfig.json         # Configuração do TypeScript
-│   └── package.json          # Dependências e scripts npm
-│
-├── docker-compose.yml        # Orquestração dos containers (frontend, backend, banco de dados)
-├── .env                      # Variáveis de ambiente (opcional)
-├── README.md                 # Este arquivo de documentação
-└── docs/                     # Imagens e arquivos de apoio à documentação
-```
-
-<h2></h2>
 
 <div align="center">
   <h3>Backend</h3>
+
+  [![My Skills](https://skillicons.dev/icons?i=java,spring,mysql&perline=9)](https://skillicons.dev)
 </div>
 
 O backend foi desenvolvido com Spring Boot, uma escolha sólida por sua robustez, escalabilidade e forte suporte à construção de APIs RESTful. A estrutura do projeto segue uma arquitetura em camadas, com divisão clara entre controllers, services e repositórios, facilitando a manutenção e os testes. O Spring também oferece integração nativa com JPA e validações, acelerando o desenvolvimento e garantindo boas práticas desde o início.
@@ -119,7 +35,7 @@ O backend foi desenvolvido com Spring Boot, uma escolha sólida por sua robustez
 <br><br>
 <div align="center">
   <h3> Documentação Swagger (OpenAPI)</h3>
-  <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png" alt="Swagger" width="40"/>
+    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png" alt="Swagger" width="50"/>
 </div>
 
 
@@ -203,6 +119,56 @@ O frontend foi desenvolvido com React.js, escolhido por sua modularidade, perfor
   <img src="https://github.com/Ki3lMigu3l/cardapio-api/blob/main/docs/adminpanel-update.png" width="500px" />
   <p><em>Funcionalidade de Edição de Itens do Cardápio</em></p>
 </div>
+
+<h2></h2>
+
+<div align="center">
+<h3>Rodando o Projeto</h3>
+
+  [![My Skills](https://skillicons.dev/icons?i=docker&perline=8)](https://skillicons.dev)
+</div>
+
+Este projeto está completamente containerizado utilizando **Docker** e **Docker Compose**. Você pode iniciar tanto o backend quanto o frontend com um único comando, sem necessidade de instalar Node.js, Java ou dependências adicionais localmente.
+
+<h4>Pré-requisitos</h4>
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+<br>
+
+Com o Docker e Docker Compose devidamente instalados no seu sistema, você pode subir toda a aplicação com um único comando.
+
+1. Acesse a pasta raiz do projeto, onde está localizado o arquivo docker-compose.yml.
+2. Abra o terminal nessa pasta.
+3. Execute o seguinte comando:
+
+
+<div align="center"  >
+  
+```bash
+  docker-compose up --build
+```
+</div>
+
+Este comando vai construir as imagens Docker do frontend, backend, banco de dados e inicializar todos os containers automaticamente.
+
+<h2></h2>
+
+<div align="center">
+<h3>Acesso aos serviços</h3>
+</div>
+
+Após a execução bem-sucedida do comando acima, os serviços estarão disponíveis nos seguintes endereços:
+
+- 🔙 Backend (API - Spring Boot): http://localhost:8080
+
+- 🎨 Frontend (React + Nginx): http://localhost
+
+- 📘 Swagger UI (Documentação da API): http://localhost:8080/swagger-ui.html
+
+<br>
+O frontend é servido por um servidor Nginx configurado para rodar na porta 80, enquanto o backend opera na porta 8080.
 
 <h2></h2>
 
